@@ -1,0 +1,36 @@
+extends layouts/main
+
+block variables
+  - pageTitle = 'Home'
+
+block content
+        
+  section.about-wrapper
+    div.wrapper 
+      div.about 
+        header.about__header 
+          a(href="#").header-logo__wrap
+            svg.header-logo
+              use(href="#logo")
+
+        div.about__content-wrap
+          div.about__content
+            p.about__text.about__text--subtitle 4 Days online course
+            h1.about__title 
+              | Take your first smart steps to implement your own software application in just 4 days
+            p.about__text 
+              | How to build your own software product: from idea to launch. For agency owners, consultants, coaches and business owners
+            p.about__text.about__text--cost Regular course fee:  399 $
+            a(href="#").about__link Get it for free
+            div.about__btn-block
+              a(href="#").about__btn Via Messengers
+              a(href="#").about__btn Via e-mail
+    div.about__img-wrap
+      img.about__img(src="images/about-img.png", alt="")
+
+
+
+        
+      
+
+      

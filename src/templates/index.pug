@@ -1,0 +1,22 @@
+extends layouts/index
+
+block variables
+  - pageTitle = 'Home'
+
+block content
+  header.index-header
+    div.index-wrapper.index-header__wrapper
+      h1.index-header__title gulp-skeleton
+
+  div.index-wrapper.index-content
+    div.index-simple-text
+      h1 Pages
+      ul
+        -
+          let values = [
+            {title: 'Home', url: 'home'},
+          ];
+
+        each item in values
+          li
+            a(href=item.url + '.html')= item.title
