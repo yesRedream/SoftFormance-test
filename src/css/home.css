@@ -1,6 +1,7 @@
 .about-wrapper {
   width: 100%;
-  background-image: url('/images/main-bg.png');
+  background-color: #013991;
+  background-image: url('../images/main-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
